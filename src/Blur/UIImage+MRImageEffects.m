@@ -106,7 +106,7 @@
 #import <Accelerate/Accelerate.h>
 
 
-vImage_Buffer vImageBuffer_InitWithCGContext(CGContextRef contextRef) {
+static vImage_Buffer vImageBuffer_InitWithCGContext(CGContextRef contextRef) {
     return (vImage_Buffer){
         .width = CGBitmapContextGetWidth(contextRef),
         .height = CGBitmapContextGetHeight(contextRef),
