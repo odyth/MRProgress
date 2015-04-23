@@ -22,11 +22,6 @@
 @property (nonatomic, retain) UIColor *progressTintColor;
 
 /**
- Current progress. Use associated setter for non animated changes. Otherwises use setProgress:aniamted:.
- */
-@property (nonatomic, assign) float progress;
-
-/**
  Change progress animated.
  
  If you set a lower value than the current progess then the animation bounces.

@@ -24,13 +24,6 @@
 @property (nonatomic, weak, readonly) UILabel *valueLabel;
 
 /**
- Current progress.
- 
- Use associated setter for non animated changes. Otherwises use setProgress:animated:.
- */
-@property (nonatomic, assign) float progress;
-
-/**
  Duration of an animated progress change.
  
  Default is 0.3s. Must be larger than zero.
